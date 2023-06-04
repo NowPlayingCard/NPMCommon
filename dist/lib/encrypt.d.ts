@@ -1,5 +1,5 @@
 declare const _default: (data: unknown, key: string) => Promise<{
-    iv: any;
+    iv: Uint8Array;
     data: Uint8Array;
 }>;
 export default _default;

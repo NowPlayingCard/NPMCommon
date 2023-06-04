@@ -28,4 +28,4 @@ export default async (data: unknown, key: string) => {
 			)
 		),
 	};
-}
+};
