@@ -1,0 +1,28 @@
+{
+	"name": "@nowplayingcards/common",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "Now Playing Cards common scripts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Now-Playing-Cards/common.git"
+	},
+	"homepage": "https://github.com/Now-Playing-Cards/common#readme",
+	"bugs": {
+		"url": "https://github.com/Now-Playing-Cards/common/issues"
+	},
+	"license": "MIT",
+	"private": false,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"prepublishOnly": "lightrix build 'src/**/*.ts'"
+	},
+	"devDependencies": {
+		"@lightrix/config": "0.0.11",
+		"@lightrix/scripts": "1.0.4"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
