@@ -1,6 +1,8 @@
 {
 	"compilerOptions": {
-		"outDir": "dist"
+		"lib": ["ESNext"],
+		"outDir": "dist",
+		"types": ["@types/node"]
 	},
 	"extends": "@lightrix/config/base/ts",
 	"include": ["src"]
