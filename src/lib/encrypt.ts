@@ -1,3 +1,5 @@
+import { Buffer } from "node:buffer";
+
 export default async (data: unknown, key: string) => {
 	const iv = crypto.getRandomValues(new Uint8Array(12));
 
