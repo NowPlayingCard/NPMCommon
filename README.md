@@ -11,7 +11,11 @@ npm install -D -E @nowplayingcards/common
 **`index.ts`**
 
 ```ts
-import { encrypt, decrypt, Uint8ArrayFromObject } from "@nowplayingcards/common";
+import {
+	encrypt,
+	decrypt,
+	Uint8ArrayFromObject,
+} from "@nowplayingcards/common";
 ```
 
 [@nowplayingcards/common]: https://npmjs.org/@nowplayingcards/common
