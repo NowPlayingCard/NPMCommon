@@ -1,18 +1,18 @@
 {
 	"name": "@nowplayingcards/common",
 	"version": "0.0.2",
-	"type": "module",
+	"private": false,
 	"description": "Now Playing Cards common scripts",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Now-Playing-Cards/common.git"
-	},
 	"homepage": "https://github.com/Now-Playing-Cards/common#readme",
 	"bugs": {
 		"url": "https://github.com/Now-Playing-Cards/common/issues"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Now-Playing-Cards/common.git"
+	},
 	"license": "MIT",
-	"private": false,
+	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
