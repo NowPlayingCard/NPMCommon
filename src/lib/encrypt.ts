@@ -24,10 +24,10 @@ export default async (data: unknown, key: string) => {
 						name: "AES-GCM",
 					},
 					false,
-					["encrypt", "decrypt"],
+					["encrypt", "decrypt"]
 				),
-				Buffer.from(JSON.stringify(data)).buffer,
-			),
+				Buffer.from(JSON.stringify(data)).buffer
+			)
 		),
 	};
 };

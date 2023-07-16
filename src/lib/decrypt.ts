@@ -18,8 +18,8 @@ export default async (data: Uint8Array, key: string, iv: Uint8Array) =>
 					name: "AES-GCM",
 				},
 				false,
-				["encrypt", "decrypt"],
+				["encrypt", "decrypt"]
 			),
-			data,
-		),
+			data
+		)
 	);
