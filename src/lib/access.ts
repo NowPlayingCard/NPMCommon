@@ -1,7 +1,7 @@
 import { Buffer } from "node:buffer";
 import type { DataObject } from "./Uint8ArrayFromObject";
-import decrypt from "./decrypt.js";
 import Uint8ArrayFromObject from "./Uint8ArrayFromObject.js";
+import decrypt from "./decrypt.js";
 
 export default async (
 	Key: JsonWebKey["k"],
