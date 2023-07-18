@@ -1,0 +1,1 @@
+import{Buffer as n}from"node:buffer";import i from"./decrypt.js";import r from"./Uint8ArrayFromObject.js";var f=async(a,e,o,c="access_token")=>{try{const{iv:t,data:m}=await o.get(e,{type:"json"});return JSON.parse(n.from(await i(await r(m),a??"",await r(t))).toString())[c]}catch{return{}}};export{f as default};

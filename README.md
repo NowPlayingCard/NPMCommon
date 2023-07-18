@@ -14,6 +14,7 @@ npm install -D -E @nowplayingcards/common
 import {
 	encrypt,
 	decrypt,
+	access,
 	Uint8ArrayFromObject,
 } from "@nowplayingcards/common";
 ```
