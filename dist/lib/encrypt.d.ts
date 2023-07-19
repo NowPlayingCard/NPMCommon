@@ -1,4 +1,4 @@
-declare const _default: (data: unknown, key: string) => Promise<{
+declare const _default: (data: unknown, Key: string) => Promise<{
     iv: Uint8Array;
     data: Uint8Array;
 }>;

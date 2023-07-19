@@ -1,6 +1,6 @@
 import { Buffer } from "node:buffer";
 
-export default async (data: unknown, key: string) => {
+export default async (data: unknown, Key: string) => {
 	const iv = crypto.getRandomValues(new Uint8Array(12));
 
 	return {
@@ -16,7 +16,7 @@ export default async (data: unknown, key: string) => {
 					"jwk",
 					{
 						kty: "oct",
-						k: key,
+						k: Key,
 						alg: "A256GCM",
 						ext: true,
 					},

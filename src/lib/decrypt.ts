@@ -1,4 +1,4 @@
-export default async (data: Uint8Array, key: string, iv: Uint8Array) =>
+export default async (data: Uint8Array, Key: string, iv: Uint8Array) =>
 	new Uint8Array(
 		await crypto.subtle.decrypt(
 			{
@@ -10,7 +10,7 @@ export default async (data: Uint8Array, key: string, iv: Uint8Array) =>
 				"jwk",
 				{
 					kty: "oct",
-					k: key,
+					k: Key,
 					alg: "A256GCM",
 					ext: true,
 				},
