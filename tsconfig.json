@@ -2,7 +2,11 @@
 	"compilerOptions": {
 		"lib": ["ESNext"],
 		"outDir": "dist",
-		"types": ["@cloudflare/workers-types", "@types/node"]
+		"types": [
+			"@cloudflare/workers-types",
+			"@cloudflare/workers-types/experimental",
+			"@types/node"
+		]
 	},
 	"extends": "@lightrix/config/base/ts",
 	"include": ["src"]

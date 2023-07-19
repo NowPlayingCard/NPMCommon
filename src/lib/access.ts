@@ -6,11 +6,11 @@ import decrypt from "./decrypt.js";
 export default async (
 	Key: JsonWebKey["k"],
 	UUID: ReturnType<Crypto["randomUUID"]>,
-	From: KVNamespace,
-	View: "access_token" = "access_token"
+	Get: KVNamespace["get"],
+	View: string
 ) => {
 	try {
-		const { iv, data } = (await From.get(UUID, {
+		const { iv, data } = (await Get(UUID, {
 			type: "json",
 		})) as DataObject;
 
