@@ -6,11 +6,11 @@ import decrypt from "./decrypt.js";
 export default async (
 	Key: JsonWebKey["k"],
 	UUID: ReturnType<Crypto["randomUUID"]>,
-	Get: KVNamespace["get"],
+	KV: KVNamespace,
 	View: string
 ) => {
 	try {
-		const { iv, data } = (await Get(UUID, {
+		const { iv, data } = (await KV.get(UUID, {
 			type: "json",
 		})) as DataObject;
 
@@ -24,6 +24,6 @@ export default async (
 			).toString()
 		)[View];
 	} catch (error) {
-		return {};
+		return { error: `Could not access: ${View}` };
 	}
 };
