@@ -23,7 +23,5 @@ export default async (
 				)
 			).toString()
 		)[View];
-	} catch (error) {
-		return { error: `Cannot access: ${View}` };
-	}
+	} catch (error) {}
 };
