@@ -1,1 +1,1 @@
-import{Buffer as p}from"node:buffer";import r from"./Uint8ArrayFromObject.js";import n from"./decrypt.js";var s=async(a,e,o,i)=>{try{const{iv:t,data:m}=await o.get(e,{type:"json"});return JSON.parse(p.from(await n(await r(m),a??"",await r(t))).toString())[i]}catch{}};export{s as default};
+import{Buffer as i}from"node:buffer";import t from"./Uint8ArrayFromObject.js";import c from"./decrypt.js";var f=async(e,a,o,m)=>{try{const{iv:r,data:p}=await o.get(a,{type:"json"});return JSON.parse(i.from(await c(await t(p),e??"",await t(r))).toString())[m]}catch{}};export{f as default};

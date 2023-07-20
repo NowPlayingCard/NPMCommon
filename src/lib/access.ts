@@ -1,3 +1,4 @@
+import type { KVNamespace } from "@cloudflare/workers-types/experimental";
 import { Buffer } from "node:buffer";
 import type { DataObject } from "./Uint8ArrayFromObject";
 import Uint8ArrayFromObject from "./Uint8ArrayFromObject.js";
