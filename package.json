@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/NowPlayingCards/common.git"
+		"url": "git+https://github.com/NowPlayingCards/common.git"
 	},
 	"license": "MIT",
 	"type": "module",
