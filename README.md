@@ -12,10 +12,10 @@ npm install -D -E @nowplayingcards/common
 
 ```ts
 import {
-	encrypt,
-	decrypt,
-	access,
 	Uint8ArrayFromObject,
+	access,
+	decrypt,
+	encrypt,
 } from "@nowplayingcards/common";
 ```
 
