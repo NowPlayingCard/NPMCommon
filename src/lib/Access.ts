@@ -1,8 +1,8 @@
 import type { KVNamespace } from "@cloudflare/workers-types/experimental";
 import { Buffer } from "node:buffer";
 import decrypt from "./Decrypt.js";
-import type { DataObject } from "./Uint8arrayfromobject2.js";
-import Uint8ArrayFromObject from "./Uint8arrayfromobject2.js";
+import type { DataObject } from "./Uint8ArrayFromObject.js";
+import Uint8ArrayFromObject from "./Uint8ArrayFromObject.js";
 
 export default async (
 	Key: JsonWebKey["k"],
