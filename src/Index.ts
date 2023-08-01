@@ -1,5 +1,5 @@
-export { default as Uint8ArrayFromObject } from "./lib/Uint8arrayfromobject2.js";
-export { default as access } from "./lib/access.js";
-export { default as decrypt } from "./lib/decrypt.js";
-export { default as encrypt } from "./lib/encrypt.js";
+export { default as access } from "./lib/Access.js";
+export { default as decrypt } from "./lib/Decrypt.js";
+export { default as encrypt } from "./lib/Encrypt.js";
+export { default as Uint8ArrayFromObject } from "./lib/Uint8ArrayFromObject.js";
 
