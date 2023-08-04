@@ -1,15 +1,15 @@
 import { Buffer } from "node:buffer";
 
-export default async (data: unknown, Key: string) => {
-	const iv = crypto.getRandomValues(new Uint8Array(12));
+export default async (Data: unknown, Key: string) => {
+	const IV = crypto.getRandomValues(new Uint8Array(12));
 
 	return {
-		iv,
-		data: new Uint8Array(
+		IV,
+		Data: new Uint8Array(
 			await crypto.subtle.encrypt(
 				{
 					name: "AES-GCM",
-					iv,
+					iv: IV,
 					tagLength: 128,
 				},
 				await crypto.subtle.importKey(
@@ -26,7 +26,7 @@ export default async (data: unknown, Key: string) => {
 					false,
 					["encrypt", "decrypt"]
 				),
-				Buffer.from(JSON.stringify(data)).buffer
+				Buffer.from(JSON.stringify(Data)).buffer
 			)
 		),
 	};

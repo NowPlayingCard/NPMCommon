@@ -11,16 +11,16 @@ export default async (
 	View: string
 ) => {
 	try {
-		const { iv, data } = (await KV.get(UUID, {
+		const { IV, Data } = (await KV.get(UUID, {
 			type: "json",
 		})) as DataObject;
 
 		return JSON.parse(
 			Buffer.from(
 				await decrypt(
-					await Uint8ArrayFromObject(data),
+					await Uint8ArrayFromObject(Data),
 					Key ?? "",
-					await Uint8ArrayFromObject(iv)
+					await Uint8ArrayFromObject(IV)
 				)
 			).toString()
 		)[View];

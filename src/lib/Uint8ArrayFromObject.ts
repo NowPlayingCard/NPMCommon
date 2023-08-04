@@ -3,20 +3,20 @@ export interface Uint8ArrayObject {
 }
 
 export interface DataObject {
-	iv: Uint8ArrayObject;
-	data: Uint8ArrayObject;
+	IV: Uint8ArrayObject;
+	Data: Uint8ArrayObject;
 }
 
 export default async (obj: Uint8ArrayObject) => {
-	const keys = Object.keys(obj)
+	const Keys = Object.keys(obj)
 		.map(Number)
 		.sort((a, b) => a - b);
 
-	const array = new Uint8Array(keys.length);
+	const _Array = new Uint8Array(Keys.length);
 
-	keys.forEach((key, index) => {
-		array[index] = obj[key] ?? 0;
+	Keys.forEach((key, index) => {
+		_Array[index] = obj[key] ?? 0;
 	});
 
-	return array;
+	return _Array;
 };

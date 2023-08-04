@@ -8,7 +8,7 @@ First, install the `@nowplayingcards/common` component like so:
 npm install -D -E @nowplayingcards/common
 ```
 
-**`index.ts`**
+**`Index.ts`**
 
 ```ts
 import {

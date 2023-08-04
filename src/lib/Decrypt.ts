@@ -1,9 +1,9 @@
-export default async (data: Uint8Array, Key: string, iv: Uint8Array) =>
+export default async (Data: Uint8Array, Key: string, IV: Uint8Array) =>
 	new Uint8Array(
 		await crypto.subtle.decrypt(
 			{
 				name: "AES-GCM",
-				iv,
+				iv: IV,
 				tagLength: 128,
 			},
 			await crypto.subtle.importKey(
@@ -20,6 +20,6 @@ export default async (data: Uint8Array, Key: string, iv: Uint8Array) =>
 				false,
 				["encrypt", "decrypt"]
 			),
-			data
+			Data
 		)
 	);
