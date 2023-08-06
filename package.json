@@ -1,6 +1,6 @@
 {
 	"name": "@nowplayingcards/common",
-	"version": "0.0.10",
+	"version": "0.0.1",
 	"private": false,
 	"description": "Now Playing Cards common scripts",
 	"homepage": "https://github.com/NowPlayingCards/common#readme",
@@ -16,7 +16,7 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"scripts": {
-		"prepublishOnly": "lightrix build 'Source/**/*.ts'"
+		"prepublishOnly": "Lightrix build 'Source/**/*.ts'"
 	},
 	"devDependencies": {
 		"@lightrix/configuration": "0.0.1",
