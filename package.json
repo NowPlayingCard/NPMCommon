@@ -15,10 +15,10 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"scripts": {
-		"prepublishOnly": "Lightrix build 'Source/**/*.ts'"
+		"prepublishOnly": "Syclone build 'Source/**/*.ts'"
 	},
 	"devDependencies": {
-		"@lightrix/script": "0.0.1"
+		"syclone": "0.1.6"
 	},
 	"publishConfig": {
 		"access": "public"
