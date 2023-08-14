@@ -15,10 +15,10 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"scripts": {
-		"prepublishOnly": "Syclone build 'Source/**/*.ts'"
+		"prepublishOnly": "TypeScriptESBuild build 'Source/**/*.ts'"
 	},
 	"devDependencies": {
-		"syclone": "0.1.6"
+		"typescript-esbuild": "0.1.8"
 	},
 	"publishConfig": {
 		"access": "public"
