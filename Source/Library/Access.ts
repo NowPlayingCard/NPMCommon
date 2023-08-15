@@ -24,5 +24,5 @@ export default async (
 				)
 			).toString()
 		)[View];
-	} catch (error) {}
+	} catch (_Error) {}
 };
