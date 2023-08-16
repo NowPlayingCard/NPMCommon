@@ -11,6 +11,7 @@
 		"type": "git",
 		"url": "git+https://github.com/NowPlayingCards/common.git"
 	},
+	"license": "MIT",
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
