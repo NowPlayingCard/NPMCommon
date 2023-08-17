@@ -1,7 +1,7 @@
 {
 	"name": "@nowplayingcards/common",
 	"version": "0.0.1",
-	"private": false,
+	"private": "false",
 	"description": "Now Playing Cards common scripts",
 	"homepage": "https://github.com/NowPlayingCards/common#readme",
 	"bugs": {
@@ -12,6 +12,11 @@
 		"url": "git+https://github.com/NowPlayingCards/common.git"
 	},
 	"license": "MIT",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@nikolahristov.tech",
+		"url": "https://nikolahristov.tech"
+	},
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
