@@ -1,11 +1,11 @@
-# [@nowplayingcards/common] 🗃️
+# [@nowplayingcard/common] 🗃️
 
 ## Installation
 
-First, install the `@nowplayingcards/common` component like so:
+First, install the `@nowplayingcard/common` component like so:
 
 ```
-npm install -D -E NowPlayingCards/common#main
+npm install -D -E NowPlayingCard/common#main
 ```
 
 **`Index.ts`**
@@ -16,10 +16,10 @@ import {
 	access,
 	decrypt,
 	encrypt,
-} from "@nowplayingcards/common";
+} from "@nowplayingcard/common";
 ```
 
-[@nowplayingcards/common]: https://npmjs.org/@nowplayingcards/common
+[@nowplayingcard/common]: https://npmjs.org/@nowplayingcard/common
 
 ## Changelog
 
