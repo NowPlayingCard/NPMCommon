@@ -5,7 +5,7 @@
 First, install the `@nowplayingcards/common` component like so:
 
 ```
-npm install -D -E @nowplayingcards/common
+npm install -D -E NowPlayingCards/common#main
 ```
 
 **`Index.ts`**
