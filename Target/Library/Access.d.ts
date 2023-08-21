@@ -5,7 +5,7 @@ import type { KVNamespace } from "@cloudflare/workers-types/experimental";
  * @param Key - The `Key` parameter is of type `JsonWebKey["k"]`, which means it expects
  * a value that is a string representing a JSON Web Key. This key will be used for
  * decryption.
- * @param UUID - The UUID parameter is a unique identifier generated using the
+ * @param Identifier - The Identifier parameter is a unique identifier generated using the
  * `randomUUID` function from the `Crypto` object. It is used to retrieve data from the
  * KV namespace.
  * @param {KVNamespace} KV - KV is an instance of the KVNamespace class, which is used
@@ -17,5 +17,5 @@ import type { KVNamespace } from "@cloudflare/workers-types/experimental";
  * @returns the value of the property specified by the `View` parameter from the
  * decrypted data object.
  */
-declare const _default: (Key: JsonWebKey["k"], UUID: ReturnType<Crypto["randomUUID"]>, KV: KVNamespace, View: string) => Promise<any>;
+declare const _default: (Key: JsonWebKey["k"], Identifier: ReturnType<Crypto["randomUUID"]>, KV: KVNamespace, View: string) => Promise<any>;
 export default _default;
