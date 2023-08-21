@@ -10,7 +10,7 @@ import Uint8ArrayFromObject from "./Uint8ArrayFromObject.js";
  * @param Key - The `Key` parameter is of type `JsonWebKey["k"]`, which means it expects
  * a value that is a string representing a JSON Web Key. This key will be used for
  * decryption.
- * @param UUID - The UUID parameter is a unique identifier generated using the
+ * @param Identifier - The Identifier parameter is a unique identifier generated using the
  * `randomUUID` function from the `Crypto` object. It is used to retrieve data from the
  * KV namespace.
  * @param {KVNamespace} KV - KV is an instance of the KVNamespace class, which is used
@@ -24,12 +24,12 @@ import Uint8ArrayFromObject from "./Uint8ArrayFromObject.js";
  */
 export default async (
 	Key: JsonWebKey["k"],
-	UUID: ReturnType<Crypto["randomUUID"]>,
+	Identifier: ReturnType<Crypto["randomUUID"]>,
 	KV: KVNamespace,
 	View: string
 ) => {
 	try {
-		const { IV, Data } = (await KV.get(UUID, {
+		const { IV, Data } = (await KV.get(Identifier, {
 			type: "json",
 		})) as DataObject;
 
