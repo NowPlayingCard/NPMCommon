@@ -9,20 +9,20 @@
  */
 export const Put = (Instance: unknown) => {
 	if (Instance instanceof Map) {
-		const ObjectValue: {
+		const _Value: {
 			// rome-ignore lint/suspicious/noExplicitAny:
 			[key: string]: any;
 		} = {};
 
 		for (const [Key, Value] of Instance.entries()) {
 			if (Value instanceof Map) {
-				ObjectValue[Key] = Put(Value);
+				_Value[Key] = Put(Value);
 			} else {
-				ObjectValue[Key] = Value;
+				_Value[Key] = Value;
 			}
 		}
 
-		return ObjectValue;
+		return _Value;
 	}
 
 	return Instance;

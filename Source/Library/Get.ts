@@ -8,9 +8,11 @@ export const Get = (Instance: {
 	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 }) => {
-	const _Map = new Map();
+	if (typeof Instance === "string") {
+		return Instance;
+	}
 
-	console.log(Instance);
+	const _Map = new Map();
 
 	if (typeof Instance === "object") {
 		for (const Key in Instance) {
