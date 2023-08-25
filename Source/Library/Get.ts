@@ -10,6 +10,8 @@ export const Get = (Instance: {
 }) => {
 	const _Map = new Map();
 
+	console.log(Instance);
+
 	if (typeof Instance === "object") {
 		for (const Key in Instance) {
 			if (Object.prototype.hasOwnProperty.call(Instance, Key)) {

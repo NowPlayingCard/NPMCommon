@@ -1,1 +1,1 @@
-const t=e=>{const r=new Map;if(typeof e=="object")for(const o in e)Object.prototype.hasOwnProperty.call(e,o)&&(typeof e[o]=="object"&&!Array.isArray(e[o])?r.set(o,t(e[o])):r.set(o,e[o]));return r};var p=t;export{t as Get,p as default};
+const t=o=>{const r=new Map;if(console.log(o),typeof o=="object")for(const e in o)Object.prototype.hasOwnProperty.call(o,e)&&(typeof o[e]=="object"&&!Array.isArray(o[e])?r.set(e,t(o[e])):r.set(e,o[e]));return r};var p=t;export{t as Get,p as default};
