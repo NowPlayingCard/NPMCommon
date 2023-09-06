@@ -5,13 +5,13 @@
  * @param {string} Key - The `Key` parameter is a string that represents the encryption
  * key used to encrypt the data. It is used to derive a symmetric encryption key that is
  * compatible with the AES-GCM algorithm.
- * @returns The `Encrypt` function returns an object with two properties: `IV` and
- * `Data`. `IV` is a randomly generated 12-byte array used as the initialization vector
+ * @returns The `Encrypt` function returns an object with two properties: `Vector` and
+ * `Data`. `Vector` is a randomly generated 12-byte array used as the initialization vector
  * for the encryption. `Data` is the encrypted version of the input `Data` using the
  * AES-GCM encryption algorithm.
  */
 declare const _default: (Data: unknown, Key: string) => Promise<{
-    IV: Uint8Array;
+    Vector: Uint8Array;
     Data: Uint8Array;
 }>;
 export default _default;
