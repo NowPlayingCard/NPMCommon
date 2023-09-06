@@ -3,26 +3,26 @@ export interface Uint8ArrayObject {
 }
 
 export interface DataObject {
-	IV: Uint8ArrayObject;
+	Vector: Uint8ArrayObject;
 	Data: Uint8ArrayObject;
 }
 
 /**
  * The function `Uint8ArrayFromObject` converts an object with keys as numbers and
  * values as Uint8Array elements into a sorted Uint8Array.
- * @param {Uint8ArrayObject} obj - The `obj` parameter is an object that contains
+ * @param {Uint8ArrayObject} Obj - The `Obj` parameter is an object that contains
  * key-value pairs, where the keys are numbers and the values are Uint8Array values.
  * @returns The function `Uint8ArrayFromObject` returns a `Uint8Array` object.
  */
-export default async (obj: Uint8ArrayObject) => {
-	const Keys = Object.keys(obj)
+export default async (Obj: Uint8ArrayObject) => {
+	const Keys = Object.keys(Obj)
 		.map(Number)
 		.sort((a, b) => a - b);
 
 	const _Array = new Uint8Array(Keys.length);
 
 	Keys.forEach((key, index) => {
-		_Array[index] = obj[key] ?? 0;
+		_Array[index] = Obj[key] ?? 0;
 	});
 
 	return _Array;

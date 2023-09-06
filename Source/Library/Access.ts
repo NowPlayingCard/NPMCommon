@@ -29,7 +29,7 @@ export default async (
 	View: string
 ) => {
 	try {
-		const { IV, Data } = (await KV.get(Identifier, {
+		const { Vector, Data } = (await KV.get(Identifier, {
 			type: "json",
 		})) as DataObject;
 
@@ -38,7 +38,7 @@ export default async (
 				await decrypt(
 					await Uint8ArrayFromObject(Data),
 					Key ?? "",
-					await Uint8ArrayFromObject(IV)
+					await Uint8ArrayFromObject(Vector)
 				)
 			).toString()
 		)[View];

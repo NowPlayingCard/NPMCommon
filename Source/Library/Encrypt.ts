@@ -7,21 +7,21 @@ import { Buffer } from "node:buffer";
  * @param {string} Key - The `Key` parameter is a string that represents the encryption
  * key used to encrypt the data. It is used to derive a symmetric encryption key that is
  * compatible with the AES-GCM algorithm.
- * @returns The `Encrypt` function returns an object with two properties: `IV` and
- * `Data`. `IV` is a randomly generated 12-byte array used as the initialization vector
+ * @returns The `Encrypt` function returns an object with two properties: `Vector` and
+ * `Data`. `Vector` is a randomly generated 12-byte array used as the initialization vector
  * for the encryption. `Data` is the encrypted version of the input `Data` using the
  * AES-GCM encryption algorithm.
  */
 export default async (Data: unknown, Key: string) => {
-	const IV = crypto.getRandomValues(new Uint8Array(12));
+	const Vector = crypto.getRandomValues(new Uint8Array(12));
 
 	return {
-		IV,
+		Vector,
 		Data: new Uint8Array(
 			await crypto.subtle.encrypt(
 				{
 					name: "AES-GCM",
-					iv: IV,
+					iv: Vector,
 					tagLength: 128,
 				},
 				await crypto.subtle.importKey(

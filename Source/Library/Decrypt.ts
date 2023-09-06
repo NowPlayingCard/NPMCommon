@@ -7,18 +7,18 @@
  * @param {string} Key - The `Key` parameter is a string that represents the encryption
  * key used for decrypting the data. It should be a valid key value for the specified
  * encryption algorithm (AES-GCM).
- * @param {Uint8Array} IV - The IV (Initialization Vector) is a random value used in the
+ * @param {Uint8Array} Vector - The `Vector` (Initialization Vector) is a random value used in the
  * encryption process to ensure that the same plaintext does not produce the same
  * ciphertext. It is a fixed-size random or pseudo-random value that is typically
  * required for symmetric encryption algorithms like AES-GCM (Advanced Encryption
  * Standard - Galois/Counter Mode
  */
-export default async (Data: Uint8Array, Key: string, IV: Uint8Array) =>
+export default async (Data: Uint8Array, Key: string, Vector: Uint8Array) =>
 	new Uint8Array(
 		await crypto.subtle.decrypt(
 			{
 				name: "AES-GCM",
-				iv: IV,
+				iv: Vector,
 				tagLength: 128,
 			},
 			await crypto.subtle.importKey(
