@@ -1,8 +1,8 @@
-export interface Uint8ArrayObject {
+export default interface Uint8ArrayObject {
 	[key: number]: number;
 }
 
-export interface DataObject {
+export default interface DataObject {
 	Vector: Uint8ArrayObject;
 	Data: Uint8ArrayObject;
 }
