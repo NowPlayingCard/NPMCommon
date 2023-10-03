@@ -4,7 +4,7 @@
  * be any string, and the values can be of any type.
  * @returns a Map object containing the key-value pairs from the input object.
  */
-export declare const Get: (Instance: {
+export declare const _Function: (Instance: {
     [key: string]: any;
 }) => Map<any, any>;
-export default Get;
+export default _Function;

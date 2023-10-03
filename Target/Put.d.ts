@@ -7,5 +7,5 @@
  * is also an instance of `Map`, it is converted recursively as well. The resulting object is then
  * returned. If `Instance` is not an instance of `Map`, it is returned as is
  */
-export declare const Put: (Instance: unknown) => unknown;
-export default Put;
+export declare const _Function: (Instance: unknown) => unknown;
+export default _Function;

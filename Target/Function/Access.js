@@ -1,0 +1,1 @@
+import i from"../Library./Function/Decrypt.js";import t from"../Library./Function/Uint8ArrayFromObject.js";import{Buffer as c}from"node:buffer";var f=async(a,e,o,m)=>{try{const{Vector:r,Data:p}=await o.get(e,{type:"json"});return JSON.parse(c.from(await i(await t(p),a??"",await t(r))).toString())[m]}catch{}};export{f as default};
