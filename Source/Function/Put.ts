@@ -7,7 +7,7 @@
  * is also an instance of `Map`, it is converted recursively as well. The resulting object is then
  * returned. If `Instance` is not an instance of `Map`, it is returned as is
  */
-export const Put = (Instance: unknown) => {
+export const _Function = (Instance: unknown) => {
 	if (Instance instanceof Map) {
 		const _Value: {
 			// rome-ignore lint/suspicious/noExplicitAny:
@@ -16,7 +16,7 @@ export const Put = (Instance: unknown) => {
 
 		for (const [Key, Value] of Instance.entries()) {
 			if (Value instanceof Map) {
-				_Value[Key] = Put(Value);
+				_Value[Key] = _Function(Value);
 			} else {
 				_Value[Key] = Value;
 			}
@@ -28,4 +28,4 @@ export const Put = (Instance: unknown) => {
 	return Instance;
 };
 
-export default Put;
+export default _Function;

@@ -1,9 +1,9 @@
-import type { DataObject } from "./Uint8ArrayFromObject.js";
+import type { DataObject } from "../Library./Function/Uint8ArrayFromObject.js";
 
 import type { KVNamespace } from "@cloudflare/workers-types/experimental";
 
-import decrypt from "./Decrypt.js";
-import Uint8ArrayFromObject from "./Uint8ArrayFromObject.js";
+import decrypt from "../Library./Function/Decrypt.js";
+import Uint8ArrayFromObject from "../Library./Function/Uint8ArrayFromObject.js";
 
 import { Buffer } from "node:buffer";
 

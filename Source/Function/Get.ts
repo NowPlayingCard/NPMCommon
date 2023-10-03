@@ -4,7 +4,7 @@
  * be any string, and the values can be of any type.
  * @returns a Map object containing the key-value pairs from the input object.
  */
-export const Get = (Instance: {
+export const _Function = (Instance: {
 	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 }) => {
@@ -21,7 +21,7 @@ export const Get = (Instance: {
 					typeof Instance[Key] === "object" &&
 					!Array.isArray(Instance[Key])
 				) {
-					_Map.set(Key, Get(Instance[Key]));
+					_Map.set(Key, _Function(Instance[Key]));
 				} else {
 					_Map.set(Key, Instance[Key]);
 				}
@@ -32,4 +32,4 @@ export const Get = (Instance: {
 	return _Map;
 };
 
-export default Get;
+export default _Function;
