@@ -2,7 +2,7 @@
 	"name": "@nowplayingcards/common",
 	"version": "0.0.1",
 	"private": false,
-	"description": "Now Playing Cards common scripts",
+	"description": "▶️ Now Playing Cards common scripts",
 	"homepage": "https://github.com/NowPlayingCards/common#readme",
 	"bugs": {
 		"url": "https://github.com/NowPlayingCards/common/issues"
@@ -18,8 +18,6 @@
 		"url": "https://nikolahristov.tech"
 	},
 	"type": "module",
-	"main": "./Target/Index.js",
-	"types": "./Target/Index.d.ts",
 	"scripts": {
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
 	},
