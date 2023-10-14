@@ -5,7 +5,7 @@
  * @returns a Map object containing the key-value pairs from the input object.
  */
 export const _Function = (Instance: {
-	// rome-ignore lint/suspicious/noExplicitAny:
+	// biome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 }) => {
 	if (typeof Instance === "string") {

@@ -10,7 +10,7 @@
 export const _Function = (Instance: unknown) => {
 	if (Instance instanceof Map) {
 		const _Value: {
-			// rome-ignore lint/suspicious/noExplicitAny:
+			// biome-ignore lint/suspicious/noExplicitAny:
 			[key: string]: any;
 		} = {};
 

@@ -21,8 +21,8 @@ export default async (Obj: Uint8ArrayObject) => {
 
 	const _Array = new Uint8Array(Keys.length);
 
-	Keys.forEach((key, index) => {
-		_Array[index] = Obj[key] ?? 0;
+	Keys.forEach((Key, Index) => {
+		_Array[Index] = Obj[Key] ?? 0;
 	});
 
 	return _Array;
