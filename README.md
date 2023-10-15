@@ -1,11 +1,11 @@
-# [@nowplayingcards/common] 🗃️
+# [@common/now-playing_cards] 🗃️
 
 ## Installation
 
-First, install the `@nowplayingcards/common` component like so:
+First, install the `@common/now-playing_cards` component like so:
 
 ```
-npm install -D -E nowplayingcards/common#main
+npm install -D -E common/now-playing_cards#main
 ```
 
 **`Index.ts`**
@@ -18,10 +18,10 @@ import {
 	Get,
 	Put,
 	Uint8ArrayFromObject,
-} from "@nowplayingcards/common";
+} from "@common/now-playing_cards";
 ```
 
-[@nowplayingcards/common]: https://npmjs.org/@nowplayingcards/common
+[@common/now-playing_cards]: https://npmjs.org/@common/now-playing_cards
 
 ## Changelog
 

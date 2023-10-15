@@ -1,15 +1,15 @@
 {
-	"name": "@nowplayingcards/common",
+	"name": "@common/now-playing_cards",
 	"version": "0.0.1",
 	"private": false,
 	"description": "▶️ Now Playing Cards common scripts",
-	"homepage": "https://github.com/NowPlayingCards/common#readme",
+	"homepage": "https://github.com/NowPlayingCards/Common#readme",
 	"bugs": {
-		"url": "https://github.com/NowPlayingCards/common/issues"
+		"url": "https://github.com/NowPlayingCards/Common/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/NowPlayingCards/common.git"
+		"url": "git+https://github.com/NowPlayingCards/Common.git"
 	},
 	"license": "MIT",
 	"author": {
