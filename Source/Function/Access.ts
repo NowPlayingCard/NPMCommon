@@ -2,9 +2,11 @@
  * @module Access
  *
  */
-export default (async (...[Key, Identifier, KV, View]: Parameters<Type>) => {
+export default (async (
+	...[Key, Identifier, { get }, View]: Parameters<Type>
+) => {
 	try {
-		const { Vector, Data } = (await KV.get(Identifier, {
+		const { Vector, Data } = (await get(Identifier, {
 			type: "json",
 		})) satisfies unknown as Data;
 
