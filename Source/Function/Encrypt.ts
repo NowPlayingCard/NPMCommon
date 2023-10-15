@@ -3,18 +3,24 @@
  *
  */
 export default (async (...[Data, Key]: Parameters<Type>) => {
-	const Vector = crypto.getRandomValues(new Uint8Array(12));
+	const Vector = (
+		await import("@cloudflare/workers-types/experimental")
+	).crypto.getRandomValues(new Uint8Array(12));
 
 	return {
 		Vector,
 		Data: new Uint8Array(
-			await crypto.subtle.encrypt(
+			await (
+				await import("@cloudflare/workers-types/experimental")
+			).crypto.subtle.encrypt(
 				{
 					name: "AES-GCM",
 					iv: Vector,
 					tagLength: 128,
 				},
-				await crypto.subtle.importKey(
+				await (
+					await import("@cloudflare/workers-types/experimental")
+				).crypto.subtle.importKey(
 					"jwk",
 					{
 						kty: "oct",
@@ -36,5 +42,3 @@ export default (async (...[Data, Key]: Parameters<Type>) => {
 }) satisfies Type as Type;
 
 import type Type from "../Interface/Encrypt.js";
-
-// export const { crypto } = await import('')

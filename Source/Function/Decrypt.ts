@@ -5,13 +5,17 @@
 
 export default (async (...[Data, Key, Vector]: Parameters<Type>) =>
 	new Uint8Array(
-		await crypto.subtle.decrypt(
+		await (
+			await import("@cloudflare/workers-types/experimental")
+		).crypto.subtle.decrypt(
 			{
 				name: "AES-GCM",
 				iv: Vector,
 				tagLength: 128,
 			},
-			await crypto.subtle.importKey(
+			await (
+				await import("@cloudflare/workers-types/experimental")
+			).crypto.subtle.importKey(
 				"jwk",
 				{
 					kty: "oct",
