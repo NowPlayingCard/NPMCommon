@@ -2,6 +2,7 @@
  * @module Decrypt
  *
  */
+
 export default (async (...[Data, Key, Vector]: Parameters<Type>) =>
 	new Uint8Array(
 		await crypto.subtle.decrypt(
