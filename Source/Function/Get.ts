@@ -1,13 +1,8 @@
 /**
- * The Get function recursively converts an object into a Map data structure.
- * @param Instance - The `Instance` parameter is an object that contains key-value pairs. The keys can
- * be any string, and the values can be of any type.
- * @returns a Map object containing the key-value pairs from the input object.
+ * @module Get
+ *
  */
-export const _Function = (Instance: {
-	// biome-ignore lint/suspicious/noExplicitAny:
-	[key: string]: any;
-}) => {
+export const _Function = ((...[Instance]: Parameters<Type>) => {
 	if (typeof Instance === "string") {
 		return Instance;
 	}
@@ -30,6 +25,8 @@ export const _Function = (Instance: {
 	}
 
 	return _Map;
-};
+}) satisfies Type as Type;
 
 export default _Function;
+
+import type Type from "../Interface/Get.js";

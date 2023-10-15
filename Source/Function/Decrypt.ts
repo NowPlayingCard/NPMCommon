@@ -14,7 +14,7 @@ export default (async (...[Data, Key, Vector]: Parameters<Type>) =>
 				"jwk",
 				{
 					kty: "oct",
-					k: Key,
+					k: Key ?? "",
 					alg: "A256GCM",
 					ext: true,
 				},
