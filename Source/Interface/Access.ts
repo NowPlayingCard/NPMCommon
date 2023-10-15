@@ -25,6 +25,7 @@ export default interface Type {
 	 *
 	 * @returns the value of the property specified by the `View` parameter from the
 	 * decrypted data object.
+	 *
 	 */
 	(
 		Key: JsonWebKey["k"],
