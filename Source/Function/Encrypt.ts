@@ -36,3 +36,5 @@ export default (async (...[Data, Key]: Parameters<Type>) => {
 }) satisfies Type as Type;
 
 import type Type from "../Interface/Encrypt.js";
+
+// export const { crypto } = await import('')
