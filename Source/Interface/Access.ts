@@ -38,4 +38,4 @@ export default interface Type {
 import type {
 	KVNamespace,
 	JsonWebKey,
-} from "@cloudflare/workers-types/experimental";
+} from "@cloudflare/workers-types/experimental/index.js";

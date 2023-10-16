@@ -29,4 +29,4 @@ export default interface Type {
 	): Promise<Uint8Array>;
 }
 
-import type { JsonWebKey } from "@cloudflare/workers-types/experimental";
+import type { JsonWebKey } from "@cloudflare/workers-types/experimental/index.js";
