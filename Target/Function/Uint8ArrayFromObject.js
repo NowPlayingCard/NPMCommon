@@ -1,1 +1,1 @@
-var y=async r=>{const s=Object.keys(r).map(Number).sort((e,t)=>e-t),a=new Uint8Array(s.length);return s.forEach((e,t)=>{a[t]=r[e]??0}),a};export{y as default};
+var y=async(...[t])=>{const a=Object.keys(t).map(Number).sort((e,r)=>e-r),s=new Uint8Array(a.length);return a.forEach((e,r)=>{s[r]=t[e]??0}),s};export{y as default};
