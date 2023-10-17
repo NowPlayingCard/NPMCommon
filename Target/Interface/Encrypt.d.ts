@@ -13,11 +13,6 @@ export default interface Type {
      * key used to encrypt the data. It is used to derive a symmetric encryption key that is
      * compatible with the AES-GCM algorithm.
      *
-     * @returns The `Encrypt` function returns an object with two properties: `Vector` and
-     * `Data`. `Vector` is a randomly generated 12-byte array used as the initialization vector
-     * for the encryption. `Data` is the encrypted version of the input `Data` using the
-     * AES-GCM encryption algorithm.
-     *
      */
     (Data: unknown, Key: string): Promise<Data>;
 }

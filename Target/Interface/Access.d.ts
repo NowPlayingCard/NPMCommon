@@ -24,9 +24,6 @@ export default interface Type {
      * view or property of the decrypted data that you want to access. It is used to
      * retrieve a specific value from the decrypted data object.
      *
-     * @returns the value of the property specified by the `View` parameter from the
-     * decrypted data object.
-     *
      */
     (Key: JsonWebKey["k"], Identifier: ReturnType<Crypto["randomUUID"]>, KV: KVNamespace, View: string): unknown;
 }
