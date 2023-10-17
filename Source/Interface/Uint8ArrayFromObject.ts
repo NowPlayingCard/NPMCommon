@@ -10,8 +10,6 @@ export default interface Type {
 	 * @param _Object The `Obj` parameter is an object that contains
 	 * key-value pairs, where the keys are numbers and the values are Uint8Array values.
 	 *
-	 * @returns The function `Uint8ArrayFromObject` returns a `Uint8Array` object.
-	 *
 	 */
 	(_Object: _Object): Promise<Uint8Array>;
 }
