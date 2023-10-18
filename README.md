@@ -4,7 +4,7 @@
 
 First, install the `@common/now-playing_cards` component like so:
 
-```
+```sh
 npm install -D -E common/now-playing_cards#main
 ```
 
