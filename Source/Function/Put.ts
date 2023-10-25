@@ -4,10 +4,10 @@
  */
 export const _Function = ((...[Instance]: Parameters<Type>) => {
 	if (Instance instanceof Map) {
-		const _Value: {
+		const _Value = {} as {
 			// biome-ignore lint/suspicious/noExplicitAny:
-			[key: string]: any;
-		} = {};
+			[key: string]: any | ReturnType<Type>;
+		};
 
 		for (const [Key, Value] of Instance.entries()) {
 			if (Value instanceof Map) {
