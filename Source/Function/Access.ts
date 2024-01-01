@@ -2,7 +2,7 @@
  * @module Access
  *
  */
-export default ((async (
+export default (async (
 	...[Key, Identifier, { get }, View]: Parameters<Type>
 ) => {
 	try {
@@ -12,17 +12,19 @@ export default ((async (
 
 		return JSON.parse(
 			(await import("node:buffer")).Buffer.from(
-				await (await import("./Decrypt.js")).default(
+				await (
+					await import("./Decrypt.js")
+				).default(
 					await Uint8ArrayFromObject(Data),
 					Key ?? "",
-					await Uint8ArrayFromObject(Vector),
-				),
-			).toString(),
+					await Uint8ArrayFromObject(Vector)
+				)
+			).toString()
 		)[View];
 	} catch (_Error) {
 		console.log(_Error);
 	}
-}) satisfies Type as Type);
+}) satisfies Type as Type;
 
 import type Type from "../Interface/Access.js";
 

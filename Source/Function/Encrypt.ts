@@ -2,7 +2,7 @@
  * @module Encrypt
  *
  */
-export default ((async (...[Data, Key]: Parameters<Type>) => {
+export default (async (...[Data, Key]: Parameters<Type>) => {
 	const Vector = (
 		await import("@cloudflare/workers-types/experimental")
 	).crypto.getRandomValues(new Uint8Array(12));
@@ -32,13 +32,13 @@ export default ((async (...[Data, Key]: Parameters<Type>) => {
 						name: "AES-GCM",
 					},
 					false,
-					["encrypt", "decrypt"],
+					["encrypt", "decrypt"]
 				),
 				(await import("node:buffer")).Buffer.from(JSON.stringify(Data))
-					.buffer,
-			),
+					.buffer
+			)
 		),
 	};
-}) satisfies Type as Type);
+}) satisfies Type as Type;
 
 import type Type from "../Interface/Encrypt.js";
