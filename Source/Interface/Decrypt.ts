@@ -25,7 +25,7 @@ export default interface Type {
 	(
 		Data: Uint8Array,
 		Key: JsonWebKey["k"],
-		Vector: Uint8Array
+		Vector: Uint8Array,
 	): Promise<Uint8Array>;
 }
 

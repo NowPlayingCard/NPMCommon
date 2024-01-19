@@ -28,11 +28,11 @@ export default interface Type {
 		Key: JsonWebKey["k"],
 		Identifier: ReturnType<Crypto["randomUUID"]>,
 		KV: KVNamespace,
-		View: string
+		View: string,
 	): unknown;
 }
 
 import type {
-	KVNamespace,
 	JsonWebKey,
+	KVNamespace,
 } from "@cloudflare/workers-types/experimental/index.js";
