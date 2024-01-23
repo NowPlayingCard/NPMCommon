@@ -2,7 +2,7 @@
  * @module Access
  *
  */
-export default ((async (
+export default (async (
 	...[Key, Identifier, { get }, View]: Parameters<Type>
 ) => {
 	try {
@@ -22,7 +22,7 @@ export default ((async (
 	} catch (_Error) {
 		console.log(_Error);
 	}
-}) satisfies Type as Type);
+}) satisfies Type as Type;
 
 import type Type from "../Interface/Access.js";
 

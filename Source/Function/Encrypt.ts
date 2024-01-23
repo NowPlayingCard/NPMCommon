@@ -2,7 +2,7 @@
  * @module Encrypt
  *
  */
-export default ((async (...[Data, Key]: Parameters<Type>) => {
+export default (async (...[Data, Key]: Parameters<Type>) => {
 	const Vector = (
 		await import("@cloudflare/workers-types/experimental")
 	).crypto.getRandomValues(new Uint8Array(12));
@@ -39,6 +39,6 @@ export default ((async (...[Data, Key]: Parameters<Type>) => {
 			),
 		),
 	};
-}) satisfies Type as Type);
+}) satisfies Type as Type;
 
 import type Type from "../Interface/Encrypt.js";
