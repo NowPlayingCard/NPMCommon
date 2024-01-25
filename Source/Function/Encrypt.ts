@@ -34,7 +34,7 @@ export default (async (...[Data, Key]: Parameters<Type>) => {
 					false,
 					["encrypt", "decrypt"],
 				),
-				(await import("node:buffer")).Buffer.from(JSON.stringify(Data))
+				(await import("buffer")).Buffer.from(JSON.stringify(Data))
 					.buffer,
 			),
 		),

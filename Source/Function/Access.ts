@@ -11,7 +11,7 @@ export default (async (
 		})) satisfies unknown as Data;
 
 		return JSON.parse(
-			(await import("node:buffer")).Buffer.from(
+			(await import("buffer")).Buffer.from(
 				await (await import("./Decrypt.js")).default(
 					await Uint8ArrayFromObject(Data),
 					Key ?? "",
