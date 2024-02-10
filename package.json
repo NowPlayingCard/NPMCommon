@@ -22,8 +22,8 @@
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20240129.0",
-		"typescript-esbuild": "0.3.7"
+		"@cloudflare/workers-types": "4.20240208.0",
+		"typescript-esbuild": "0.3.8"
 	},
 	"publishConfig": {
 		"access": "public"
