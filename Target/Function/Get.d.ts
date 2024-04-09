@@ -2,6 +2,6 @@
  * @module Get
  *
  */
-export declare const _Function: Type;
+export declare const _Function: Interface;
 export default _Function;
-import type Type from "../Interface/Get.js";
+import type Interface from "@Interface/Get.js";

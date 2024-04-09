@@ -2,6 +2,6 @@
  * @module Uint8ArrayFromObject
  *
  */
-declare const _default: Type;
+declare const _default: Interface;
 export default _default;
-import type Type from "../Interface/Uint8ArrayFromObject.js";
+import type Interface from "@Interface/Uint8ArrayFromObject.js";

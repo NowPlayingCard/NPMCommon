@@ -2,7 +2,7 @@
  * @module Access
  *
  */
-declare const _default: Type;
+declare const _default: Interface;
 export default _default;
-import type Type from "../Interface/Access.js";
-export declare const Uint8ArrayFromObject: import("@Interface/Uint8ArrayFromObject.js").default;
+import type Interface from "@Interface/Access.js";
+export declare const Uint8ArrayFromObject: import("../Interface/Uint8ArrayFromObject.js").default;

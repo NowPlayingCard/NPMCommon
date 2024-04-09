@@ -2,7 +2,7 @@
  * @module Encrypt
  *
  */
-export default interface Type {
+export default interface Interface {
     /**
      * The Encrypt function encrypts data using the AES-GCM algorithm with a given key.
      *
@@ -16,4 +16,4 @@ export default interface Type {
      */
     (Data: unknown, Key: string): Promise<Data>;
 }
-import type Data from "../Interface/Data.js";
+import type Data from "@Interface/Data.js";

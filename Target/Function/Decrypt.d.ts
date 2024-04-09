@@ -2,6 +2,6 @@
  * @module Decrypt
  *
  */
-declare const _default: Type;
+declare const _default: Interface;
 export default _default;
-import type Type from "../Interface/Decrypt.js";
+import type Interface from "@Interface/Decrypt.js";
